@@ -15,7 +15,6 @@
  4.修改Bundle display name
  5.修改Server Address
  6.修改CopyRight
- 
  */
 
 @interface AIConfigureWorker : NSObject
