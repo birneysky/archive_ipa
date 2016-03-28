@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		741283D41CA9719E00AB6221 /* AIConfigureWorker.m in Sources */ = {isa = PBXBuildFile; fileRef = 741283D31CA9719E00AB6221 /* AIConfigureWorker.m */; };
+		741283D71CA9725000AB6221 /* AIArchiveWorker.m in Sources */ = {isa = PBXBuildFile; fileRef = 741283D61CA9725000AB6221 /* AIArchiveWorker.m */; };
 		DB16C64F1CA91500004ECA50 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DB16C64E1CA91500004ECA50 /* main.m */; };
 /* End PBXBuildFile section */
 
@@ -23,6 +25,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		741283D21CA9719E00AB6221 /* AIConfigureWorker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIConfigureWorker.h; sourceTree = "<group>"; };
+		741283D31CA9719E00AB6221 /* AIConfigureWorker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AIConfigureWorker.m; sourceTree = "<group>"; };
+		741283D51CA9725000AB6221 /* AIArchiveWorker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIArchiveWorker.h; sourceTree = "<group>"; };
+		741283D61CA9725000AB6221 /* AIArchiveWorker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AIArchiveWorker.m; sourceTree = "<group>"; };
 		DB16C64B1CA91500004ECA50 /* archive_ipa */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = archive_ipa; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB16C64E1CA91500004ECA50 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		DB16C6551CA9151F004ECA50 /* app_config.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = app_config.plist; sourceTree = "<group>"; };
@@ -60,6 +66,10 @@
 			children = (
 				DB16C64E1CA91500004ECA50 /* main.m */,
 				DB16C6551CA9151F004ECA50 /* app_config.plist */,
+				741283D21CA9719E00AB6221 /* AIConfigureWorker.h */,
+				741283D31CA9719E00AB6221 /* AIConfigureWorker.m */,
+				741283D51CA9725000AB6221 /* AIArchiveWorker.h */,
+				741283D61CA9725000AB6221 /* AIArchiveWorker.m */,
 			);
 			path = archive_ipa;
 			sourceTree = "<group>";
@@ -120,7 +130,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				741283D41CA9719E00AB6221 /* AIConfigureWorker.m in Sources */,
 				DB16C64F1CA91500004ECA50 /* main.m in Sources */,
+				741283D71CA9725000AB6221 /* AIArchiveWorker.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -239,6 +251,7 @@
 				DB16C6541CA91500004ECA50 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
