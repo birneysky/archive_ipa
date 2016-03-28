@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>App config</key>
+	<array>
+		<dict>
+			<key>Products path</key>
+			<string></string>
+			<key>AppIcon src path</key>
+			<string>../Params/Commbar/Logo.png</string>
+			<key>Bundle display name</key>
+			<string>迅吧</string>
+			<key>Enterprise enable</key>
+			<true/>
+			<key>Individual enable </key>
+			<false/>
+			<key>Server address</key>
+			<string>101.200.186.105</string>
+			<key>Visitor login enable</key>
+			<false/>
+			<key>Push app key</key>
+			<dict>
+				<key>Enterprise</key>
+				<string>953b6d2f83b650b6c4d1e3a0</string>
+				<key>Individual</key>
+				<string></string>
+			</dict>
+			<key>Provisioning profile</key>
+			<dict>
+				<key>Individual</key>
+				<string></string>
+				<key>Enterprise</key>
+				<string>46d5b3ba-afd6-4ce6-befe-0c60784a9777</string>
+			</dict>
+			<key>Bundle identifier</key>
+			<dict>
+				<key>Enterprise</key>
+				<string>com.v2tech.commbarEnt</string>
+				<key>Individual</key>
+				<string>com.v2tech.commbar</string>
+			</dict>
+			<key>Certificate</key>
+			<dict>
+				<key>Enterprise</key>
+				<string>iPhone Distribution: V2 Technology, Inc.</string>
+				<key>Individual</key>
+				<string>iPhone Distribution: V2 Techonlogy Inc. (Y2USA25K29)</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>Name</key>
+			<string>BizCom</string>
+			<key>Products path</key>
+			<string></string>
+			<key>AppIcon path</key>
+			<string>../Params/BizCom/Logo.png</string>
+			<key>Enterprise enable</key>
+			<false/>
+			<key>Individual enable </key>
+			<true/>
+			<key>Bundle display name</key>
+			<string>BizCom</string>
+			<key>Certificate</key>
+			<dict>
+				<key>Enterprise</key>
+				<string>iPhone Distribution: V2 Technology, Inc.</string>
+				<key>Individual</key>
+				<string>iPhone Distribution: V2 Techonlogy Inc. (Y2USA25K29)</string>
+			</dict>
+			<key>Provisioning profile</key>
+			<dict>
+				<key>Individual</key>
+				<string></string>
+				<key>Enterprise</key>
+				<string>46d5b3ba-afd6-4ce6-befe-0c60784a9777</string>
+			</dict>
+			<key>Bundle identifier</key>
+			<dict>
+				<key>Enterprise</key>
+				<string>com.v2tech.bizcomEnt</string>
+				<key>Individual</key>
+				<string>com.v2tech.bizcom</string>
+			</dict>
+		</dict>
+	</array>
+</dict>
+</plist>
