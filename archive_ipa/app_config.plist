@@ -2,85 +2,214 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>App config</key>
+	<key>Paths</key>
+	<dict>
+		<key>AppIconDstPath</key>
+		<string>../../../Api/BCAPI_IOS_DEMO/V2BC_STANDARD/Resource/Commbar.xcassets/AppIcon.appiconset</string>
+		<key>AppInfoListPath</key>
+		<string>../../../Api/BCAPI_IOS_DEMO/V2BC_STANDARD/V2_Conference/Info.plist</string>
+		<key>AppProjectPath</key>
+		<string>../../../Api/BCAPI_IOS_DEMO/V2BC_STANDARD/V2_Commbar.xcodeproj</string>
+		<key>AppConfigureListPath</key>
+		<string>../../../Api/BCAPI_IOS_DEMO/V2BC_STANDARD/NewUI/App_Configure.plist</string>
+		<key>AppLaunchImagePath</key>
+		<string>../../../Api/BCAPI_IOS_DEMO/V2BC_STANDARD/Resource/Commbar.xcassets/LaunchImage.launchimage</string>
+		<key>ProductsPath</key>
+		<string>../../../Api/BCAPI_IOS_DEMO/Products</string>
+	</dict>
+	<key>Certificates</key>
+	<array>
+		<string>iPhone Distribution: V2 Techonlogy Inc. (Y2USA25K29)</string>
+		<string>iPhone Distribution: V2 Technology, Inc.</string>
+	</array>
+	<key>BundleIDS</key>
 	<array>
 		<dict>
-			<key>Products path</key>
-			<string></string>
-			<key>AppIcon src path</key>
-			<string>../Params/Commbar/Logo.png</string>
-			<key>Bundle display name</key>
-			<string>迅吧</string>
-			<key>Enterprise enable</key>
-			<true/>
-			<key>Individual enable </key>
-			<false/>
-			<key>Server address</key>
-			<string>101.200.186.105</string>
-			<key>Visitor login enable</key>
-			<false/>
-			<key>Push app key</key>
-			<dict>
-				<key>Enterprise</key>
-				<string>953b6d2f83b650b6c4d1e3a0</string>
-				<key>Individual</key>
-				<string></string>
-			</dict>
-			<key>Provisioning profile</key>
-			<dict>
-				<key>Individual</key>
-				<string></string>
-				<key>Enterprise</key>
-				<string>46d5b3ba-afd6-4ce6-befe-0c60784a9777</string>
-			</dict>
-			<key>Bundle identifier</key>
-			<dict>
-				<key>Enterprise</key>
-				<string>com.v2tech.commbarEnt</string>
-				<key>Individual</key>
-				<string>com.v2tech.commbar</string>
-			</dict>
 			<key>Certificate</key>
+			<integer>1</integer>
+			<key>PushAppKey</key>
+			<string>953b6d2f83b650b6c4d1e3a0</string>
+			<key>ProvisioningProfile</key>
+			<string>46d5b3ba-afd6-4ce6-befe-0c60784a9777</string>
+			<key>BundleID</key>
+			<string>com.v2tech.commbarEnt</string>
+		</dict>
+		<dict>
+			<key>Certificate</key>
+			<integer>0</integer>
+			<key>PushAppKey</key>
+			<string>0988bee3c6b43c251f59e320</string>
+			<key>ProvisioningProfile</key>
+			<string>282168d8-a21a-4655-bd28-e5fb0d89de7b</string>
+			<key>BundleID</key>
+			<string>com.v2tech.v2commbar</string>
+		</dict>
+		<dict>
+			<key>Certificate</key>
+			<integer>0</integer>
+			<key>PushAppKey</key>
+			<string>99473b4b9e087aef24fdcc9f</string>
+			<key>ProvisioningProfile</key>
+			<string>61ef7973-34cf-4cd9-b76d-ba754c6ab211</string>
+			<key>BundleID</key>
+			<string>com.v2tech.51vcloud</string>
+		</dict>
+		<dict>
+			<key>Certificate</key>
+			<integer>1</integer>
+			<key>PushAppKey</key>
+			<string>e8b94b831e9e972fbd5a9d1e</string>
+			<key>ProvisioningProfile</key>
+			<string>9bc1cfaf-7288-42c6-814f-076847f53668</string>
+			<key>BundleID</key>
+			<string>com.v2tech.bizcomEnt</string>
+		</dict>
+		<dict>
+			<key>Certificate</key>
+			<integer>1</integer>
+			<key>PushAppKey</key>
+			<string>ec2e325bb7ae1073c6684486</string>
+			<key>ProvisioningProfile</key>
+			<string>345d6389-4872-413b-9fde-7d039adbc720</string>
+			<key>BundleID</key>
+			<string>com.v2tech.ucsEnt</string>
+		</dict>
+	</array>
+	<key>AppConfig</key>
+	<array>
+		<dict>
+			<key>IpaFilePath</key>
+			<string>`pwd`/Commbar_Ent.ipa</string>
+			<key>BundleIdentifier</key>
+			<integer>0</integer>
+			<key>AppIconSrcPath</key>
+			<string>./Commbar.png</string>
+			<key>BundleDisplayName</key>
+			<string>迅吧</string>
+			<key>ServerAddress</key>
+			<string>101.200.186.105</string>
+			<key>VisitorLoginEnable</key>
+			<true/>
+			<key>Copyright</key>
 			<dict>
-				<key>Enterprise</key>
-				<string>iPhone Distribution: V2 Technology, Inc.</string>
-				<key>Individual</key>
-				<string>iPhone Distribution: V2 Techonlogy Inc. (Y2USA25K29)</string>
+				<key>en-JP</key>
+				<string>Copyright (C) Beijing WR Technology Co.,Ltd., All Rights Reserved.</string>
+				<key>ja-JP</key>
+				<string>Copyright (C) Beijing WR Technology Co.,Ltd., All Rights Reserved.</string>
+				<key>ko-JP</key>
+				<string>Copyright (C) Beijing WR Technology Co.,Ltd., All Rights Reserved.</string>
+				<key>zh-Hans-JP</key>
+				<string>版权所有 (C) 北京威速融讯科技有限公司 保留所有权利</string>
+				<key>zh-Hant-JP</key>
+				<string>版權所有 (C) 北京威速融訊科技有限公司 保留所有權利</string>
 			</dict>
 		</dict>
 		<dict>
-			<key>Name</key>
-			<string>BizCom</string>
-			<key>Products path</key>
-			<string></string>
-			<key>AppIcon path</key>
-			<string>../Params/BizCom/Logo.png</string>
-			<key>Enterprise enable</key>
-			<false/>
-			<key>Individual enable </key>
+			<key>IpaFilePath</key>
+			<string>`pwd`/V2Commbar.ipa</string>
+			<key>BundleIdentifier</key>
+			<integer>1</integer>
+			<key>AppIconSrcPath</key>
+			<string>./Commbar.png</string>
+			<key>BundleDisplayName</key>
+			<string>迅吧</string>
+			<key>ServerAddress</key>
+			<string>101.200.186.105</string>
+			<key>VisitorLoginEnable</key>
 			<true/>
-			<key>Bundle display name</key>
+			<key>Copyright</key>
+			<dict>
+				<key>en-JP</key>
+				<string>Copyright (C) Beijing WR Technology Co.,Ltd., All Rights Reserved.</string>
+				<key>ja-JP</key>
+				<string>Copyright (C) Beijing WR Technology Co.,Ltd., All Rights Reserved.</string>
+				<key>ko-JP</key>
+				<string>Copyright (C) Beijing WR Technology Co.,Ltd., All Rights Reserved.</string>
+				<key>zh-Hans-JP</key>
+				<string>版权所有 (C) 北京威速融讯科技有限公司 保留所有权利</string>
+				<key>zh-Hant-JP</key>
+				<string>版權所有 (C) 北京威速融訊科技有限公司 保留所有權利</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>IpaFilePath</key>
+			<string>`pwd`/51vcloud.ipa</string>
+			<key>BundleIdentifier</key>
+			<integer>2</integer>
+			<key>AppIconSrcPath</key>
+			<string>./51vcloud.png</string>
+			<key>BundleDisplayName</key>
+			<string>融讯企业云</string>
+			<key>ServerAddress</key>
+			<string>101.200.186.105</string>
+			<key>VisitorLoginEnable</key>
+			<true/>
+			<key>Copyright</key>
+			<dict>
+				<key>en-JP</key>
+				<string>Copyright (C) Beijing WR Technology Co.,Ltd., All Rights Reserved.</string>
+				<key>ja-JP</key>
+				<string>Copyright (C) Beijing WR Technology Co.,Ltd., All Rights Reserved.</string>
+				<key>ko-JP</key>
+				<string>Copyright (C) Beijing WR Technology Co.,Ltd., All Rights Reserved.</string>
+				<key>zh-Hans-JP</key>
+				<string>版权所有 (C) 北京威速融讯科技有限公司 保留所有权利</string>
+				<key>zh-Hant-JP</key>
+				<string>版權所有 (C) 北京威速融訊科技有限公司 保留所有權利</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>IpaFilePath</key>
+			<string>`pwd`/BizCom_Ent.ipa</string>
+			<key>BundleIdentifier</key>
+			<integer>3</integer>
+			<key>AppIconSrcPath</key>
+			<string>./BizCom.png</string>
+			<key>BundleDisplayName</key>
 			<string>BizCom</string>
-			<key>Certificate</key>
+			<key>ServerAddress</key>
+			<string>192.168.0.222</string>
+			<key>VisitorLoginEnable</key>
+			<true/>
+			<key>Copyright</key>
 			<dict>
-				<key>Enterprise</key>
-				<string>iPhone Distribution: V2 Technology, Inc.</string>
-				<key>Individual</key>
-				<string>iPhone Distribution: V2 Techonlogy Inc. (Y2USA25K29)</string>
+				<key>en-JP</key>
+				<string>Copyright (C) V2 Technology, Inc. All Rights Reserved.</string>
+				<key>ja-JP</key>
+				<string>Copyright (C) V2 Technology, Inc. All Rights Reserved.</string>
+				<key>ko-JP</key>
+				<string>Copyright (C) V2 Technology, Inc. All Rights Reserved.</string>
+				<key>zh-Hans-JP</key>
+				<string>版权所有 (C) 北京威速科技有限公司 保留所有权利</string>
+				<key>zh-Hant-JP</key>
+				<string>版權所有 (C) 北京威速科技有限公司 保留所有權利</string>
 			</dict>
-			<key>Provisioning profile</key>
+		</dict>
+		<dict>
+			<key>IpaFilePath</key>
+			<string>`pwd`/UCS_Ent.ipa</string>
+			<key>BundleIdentifier</key>
+			<integer>4</integer>
+			<key>AppIconSrcPath</key>
+			<string>./UCS.png</string>
+			<key>BundleDisplayName</key>
+			<string>IM</string>
+			<key>ServerAddress</key>
+			<string>192.168.0.222</string>
+			<key>VisitorLoginEnable</key>
+			<true/>
+			<key>Copyright</key>
 			<dict>
-				<key>Individual</key>
-				<string></string>
-				<key>Enterprise</key>
-				<string>46d5b3ba-afd6-4ce6-befe-0c60784a9777</string>
-			</dict>
-			<key>Bundle identifier</key>
-			<dict>
-				<key>Enterprise</key>
-				<string>com.v2tech.bizcomEnt</string>
-				<key>Individual</key>
-				<string>com.v2tech.bizcom</string>
+				<key>en-JP</key>
+				<string>Copyright (C) All Rights Reserved.</string>
+				<key>ja-JP</key>
+				<string>Copyright (C) All Rights Reserved.</string>
+				<key>ko-JP</key>
+				<string>Copyright (C) All Rights Reserved.</string>
+				<key>zh-Hans-JP</key>
+				<string>版权所有 (C) 保留所有权利</string>
+				<key>zh-Hant-JP</key>
+				<string>版權所有 (C) 保留所有權利</string>
 			</dict>
 		</dict>
 	</array>

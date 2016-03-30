@@ -13,6 +13,12 @@
  2. 导出 ipa 文件
  */
 
+@class AIAppConfigInfo;
+
 @interface AIArchiveWorker : NSObject
+
+- (instancetype)initWithAppConfigInfo:(AIAppConfigInfo*)info;
+
+- (BOOL)archive;
 
 @end

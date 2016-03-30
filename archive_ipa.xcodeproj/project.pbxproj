@@ -10,6 +10,8 @@
 		741283D41CA9719E00AB6221 /* AIConfigureWorker.m in Sources */ = {isa = PBXBuildFile; fileRef = 741283D31CA9719E00AB6221 /* AIConfigureWorker.m */; };
 		741283D71CA9725000AB6221 /* AIArchiveWorker.m in Sources */ = {isa = PBXBuildFile; fileRef = 741283D61CA9725000AB6221 /* AIArchiveWorker.m */; };
 		DB16C64F1CA91500004ECA50 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DB16C64E1CA91500004ECA50 /* main.m */; };
+		DB16C65A1CAA1D7D004ECA50 /* AIAppConfigInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = DB16C6591CAA1D7D004ECA50 /* AIAppConfigInfo.m */; };
+		DB16C65D1CAA3C11004ECA50 /* CommandExecutor.m in Sources */ = {isa = PBXBuildFile; fileRef = DB16C65C1CAA3C11004ECA50 /* CommandExecutor.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -32,6 +34,10 @@
 		DB16C64B1CA91500004ECA50 /* archive_ipa */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = archive_ipa; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB16C64E1CA91500004ECA50 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		DB16C6551CA9151F004ECA50 /* app_config.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = app_config.plist; sourceTree = "<group>"; };
+		DB16C6581CAA1D7D004ECA50 /* AIAppConfigInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIAppConfigInfo.h; sourceTree = "<group>"; };
+		DB16C6591CAA1D7D004ECA50 /* AIAppConfigInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AIAppConfigInfo.m; sourceTree = "<group>"; };
+		DB16C65B1CAA3C11004ECA50 /* CommandExecutor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommandExecutor.h; sourceTree = "<group>"; };
+		DB16C65C1CAA3C11004ECA50 /* CommandExecutor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommandExecutor.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +76,10 @@
 				741283D31CA9719E00AB6221 /* AIConfigureWorker.m */,
 				741283D51CA9725000AB6221 /* AIArchiveWorker.h */,
 				741283D61CA9725000AB6221 /* AIArchiveWorker.m */,
+				DB16C6581CAA1D7D004ECA50 /* AIAppConfigInfo.h */,
+				DB16C6591CAA1D7D004ECA50 /* AIAppConfigInfo.m */,
+				DB16C65B1CAA3C11004ECA50 /* CommandExecutor.h */,
+				DB16C65C1CAA3C11004ECA50 /* CommandExecutor.m */,
 			);
 			path = archive_ipa;
 			sourceTree = "<group>";
@@ -131,6 +141,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				741283D41CA9719E00AB6221 /* AIConfigureWorker.m in Sources */,
+				DB16C65D1CAA3C11004ECA50 /* CommandExecutor.m in Sources */,
+				DB16C65A1CAA1D7D004ECA50 /* AIAppConfigInfo.m in Sources */,
 				DB16C64F1CA91500004ECA50 /* main.m in Sources */,
 				741283D71CA9725000AB6221 /* AIArchiveWorker.m in Sources */,
 			);

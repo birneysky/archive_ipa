@@ -17,8 +17,12 @@
  6.修改CopyRight
  */
 
+@class AIAppConfigInfo;
+
 @interface AIConfigureWorker : NSObject
 
+- (instancetype)initWithAppConfigInfo:(AIAppConfigInfo*)info;
 
+- (BOOL)configure;
 
 @end
