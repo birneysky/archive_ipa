@@ -11,21 +11,41 @@
 #import "AIArchiveWorker.h"
 #import "AIConfigureWorker.h"
 
+
+void printErrorInfo()
+{
+    NSLog(@"\narchive_ipa options:\n  -ipa bundleName  produce ipa file\n  -config BundleName configure .xcodeproj file,produce app icon, set bundle ID by app_config.plist");
+    exit(0);
+}
+
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
+        NSString* option = nil;
+        NSString* arguments = nil;
+        if (3 == argc ) {
+            option = [[NSString alloc] initWithUTF8String:argv[1]];
+            arguments = [[NSString alloc] initWithUTF8String:argv[2]];
+            if (!([option isEqualToString:@"-ipa"] || [option isEqualToString:@"-config"])) {
+                printErrorInfo();
+            }
+        }
+        else if(1 != argc){
+            printErrorInfo();
+        }
+        
         NSDictionary* config =  [NSDictionary dictionaryWithContentsOfFile:@"app_config.plist"];
         NSArray* appConfigs = [config objectForKey:@"AppConfig"];
         NSArray* bundleIDs = [config objectForKey:@"BundleIDS"];
         NSArray* certificates = [config objectForKey:@"Certificates"];
         NSDictionary* pathes = [config objectForKey:@"Paths"];
-        NSMutableArray* array = [[NSMutableArray alloc] init];
         for (NSInteger i = 0; i < appConfigs.count; i++) {
             NSDictionary* appItem = appConfigs[i];
             NSUInteger bundleIDIndex = [[appItem objectForKey:@"BundleIdentifier"] unsignedIntegerValue];
             NSDictionary* bundleIDItem = bundleIDs[bundleIDIndex];
             NSUInteger certificateIndex = [[bundleIDItem objectForKey:@"Certificate"] unsignedIntegerValue];
+            NSString* bundleID =  [bundleIDItem objectForKey:@"BundleID"];
             AIAppConfigInfo* configInfo = [[AIAppConfigInfo alloc] init];
-            configInfo.bundleIdentifier = [bundleIDItem objectForKey:@"BundleID"];
+            configInfo.bundleIdentifier = bundleID;
             configInfo.certificateName = [certificates objectAtIndex:certificateIndex];
             configInfo.pushAppKey = [bundleIDItem objectForKey:@"PushAppKey"];
             configInfo.provisioningProfile = [bundleIDItem objectForKey:@"ProvisioningProfile"];
@@ -38,24 +58,28 @@ int main(int argc, const char * argv[]) {
             configInfo.appIconSrcPath = [appItem objectForKey:@"AppIconSrcPath"];
             configInfo.appProjectPath = [pathes objectForKey:@"AppProjectPath"];
             configInfo.appIconDstPath = [pathes objectForKey:@"AppIconDstPath"];
+            configInfo.appPushConfigListPath = [pathes objectForKey:@"AppPushConfigListPath"];
             configInfo.appConfigureListPath = [pathes objectForKey:@"AppConfigureListPath"];
             configInfo.appLaunchImagePath = [pathes objectForKey:@"AppLaunchImagePath"];
             configInfo.appInfoListPath = [pathes objectForKey:@"AppInfoListPath"];
+            configInfo.compositeLogoPath = [pathes objectForKey:@"CompositeLogoPath"];
             configInfo.productsPath = [pathes objectForKey:@"ProductsPath"];
             
-            
-            AIConfigureWorker* configWorker = [[AIConfigureWorker alloc] initWithAppConfigInfo:configInfo];
-            [configWorker configure];
-            
-            AIArchiveWorker* archiveWorker = [[AIArchiveWorker alloc] initWithAppConfigInfo:configInfo];
-            [archiveWorker archive];
-            
-            [array addObject:configInfo];
+            if ([option isEqualToString:@"-config"] && [bundleID isEqualToString:bundleID]) {
+                AIConfigureWorker* configWorker = [[AIConfigureWorker alloc] initWithAppConfigInfo:configInfo];
+                [configWorker configure];
+                break;
+            }
+            else if (([option isEqualToString:@"-ipa"] && [bundleID isEqualToString:bundleID])|| 1 == argc)
+            {
+                AIConfigureWorker* configWorker = [[AIConfigureWorker alloc] initWithAppConfigInfo:configInfo];
+                [configWorker configure];
+                
+                AIArchiveWorker* archiveWorker = [[AIArchiveWorker alloc] initWithAppConfigInfo:configInfo];
+                [archiveWorker archive];
+            }
         }
-        
-        
-        
-       // NSLog(@"config info %@",config);
+
     }
     return 0;
 }

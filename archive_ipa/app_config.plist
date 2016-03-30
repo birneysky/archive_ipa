@@ -4,6 +4,8 @@
 <dict>
 	<key>Paths</key>
 	<dict>
+		<key>AppPushConfigListPath</key>
+		<string>../../../Api/BCAPI_IOS_DEMO/V2BC_STANDARD/V2_Conference/PushConfig.plist</string>
 		<key>AppIconDstPath</key>
 		<string>../../../Api/BCAPI_IOS_DEMO/V2BC_STANDARD/Resource/Commbar.xcassets/AppIcon.appiconset</string>
 		<key>AppInfoListPath</key>
@@ -16,6 +18,8 @@
 		<string>../../../Api/BCAPI_IOS_DEMO/V2BC_STANDARD/Resource/Commbar.xcassets/LaunchImage.launchimage</string>
 		<key>ProductsPath</key>
 		<string>../../../Api/BCAPI_IOS_DEMO/Products</string>
+		<key>CompositeLogoPath</key>
+		<string>./composite_logo.png</string>
 	</dict>
 	<key>Certificates</key>
 	<array>
@@ -40,7 +44,7 @@
 			<key>PushAppKey</key>
 			<string>0988bee3c6b43c251f59e320</string>
 			<key>ProvisioningProfile</key>
-			<string>282168d8-a21a-4655-bd28-e5fb0d89de7b</string>
+			<string>1b814ca0-65f9-43c3-b0a4-a11f2d91ec53</string>
 			<key>BundleID</key>
 			<string>com.v2tech.v2commbar</string>
 		</dict>
@@ -50,7 +54,7 @@
 			<key>PushAppKey</key>
 			<string>99473b4b9e087aef24fdcc9f</string>
 			<key>ProvisioningProfile</key>
-			<string>61ef7973-34cf-4cd9-b76d-ba754c6ab211</string>
+			<string>03fa3171-cb55-4b98-86af-399854f58767</string>
 			<key>BundleID</key>
 			<string>com.v2tech.51vcloud</string>
 		</dict>
@@ -79,11 +83,11 @@
 	<array>
 		<dict>
 			<key>IpaFilePath</key>
-			<string>`pwd`/Commbar_Ent.ipa</string>
+			<string>`pwd`/Files/CommBar_Ent_Setup.ipa</string>
 			<key>BundleIdentifier</key>
 			<integer>0</integer>
 			<key>AppIconSrcPath</key>
-			<string>./Commbar.png</string>
+			<string>../Params/CommBar/Logo.png</string>
 			<key>BundleDisplayName</key>
 			<string>迅吧</string>
 			<key>ServerAddress</key>
@@ -106,11 +110,11 @@
 		</dict>
 		<dict>
 			<key>IpaFilePath</key>
-			<string>`pwd`/V2Commbar.ipa</string>
+			<string>`pwd`/Files/CommBar_Setup.ipa</string>
 			<key>BundleIdentifier</key>
 			<integer>1</integer>
 			<key>AppIconSrcPath</key>
-			<string>./Commbar.png</string>
+			<string>../Params/CommBar/Logo.png</string>
 			<key>BundleDisplayName</key>
 			<string>迅吧</string>
 			<key>ServerAddress</key>
@@ -133,11 +137,11 @@
 		</dict>
 		<dict>
 			<key>IpaFilePath</key>
-			<string>`pwd`/51vcloud.ipa</string>
+			<string>`pwd`/Files/51vcloud_Setup.ipa</string>
 			<key>BundleIdentifier</key>
 			<integer>2</integer>
 			<key>AppIconSrcPath</key>
-			<string>./51vcloud.png</string>
+			<string>../Params/51vcloud/Logo.png</string>
 			<key>BundleDisplayName</key>
 			<string>融讯企业云</string>
 			<key>ServerAddress</key>
@@ -160,11 +164,11 @@
 		</dict>
 		<dict>
 			<key>IpaFilePath</key>
-			<string>`pwd`/BizCom_Ent.ipa</string>
+			<string>`pwd`/Files/BizCom_Setup.ipa</string>
 			<key>BundleIdentifier</key>
 			<integer>3</integer>
 			<key>AppIconSrcPath</key>
-			<string>./BizCom.png</string>
+			<string>../Params/BizCom/Logo.png</string>
 			<key>BundleDisplayName</key>
 			<string>BizCom</string>
 			<key>ServerAddress</key>
@@ -187,11 +191,11 @@
 		</dict>
 		<dict>
 			<key>IpaFilePath</key>
-			<string>`pwd`/UCS_Ent.ipa</string>
+			<string>`pwd`/Files/Blank_Setup.ipa</string>
 			<key>BundleIdentifier</key>
 			<integer>4</integer>
 			<key>AppIconSrcPath</key>
-			<string>./UCS.png</string>
+			<string>../Params/Blank/Logo.png</string>
 			<key>BundleDisplayName</key>
 			<string>IM</string>
 			<key>ServerAddress</key>

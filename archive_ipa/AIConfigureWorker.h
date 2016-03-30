@@ -10,8 +10,8 @@
 
 /*
  1.修改Bundle id
- 2.生成各种尺寸的AppIcon
- 3.生成各种尺寸的LaunchImage
+ 2.生成各种size的AppIcon
+ 3.生成各种size的LaunchImage
  4.修改Bundle display name
  5.修改Server Address
  6.修改CopyRight

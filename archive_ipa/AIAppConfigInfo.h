@@ -25,6 +25,8 @@
 @property (nonatomic,copy) NSString* appLaunchImagePath;
 @property (nonatomic,copy) NSString* appProjectPath;
 @property (nonatomic,copy) NSString* appInfoListPath;
+@property (nonatomic,copy) NSString* appPushConfigListPath;
+@property (nonatomic,copy) NSString* compositeLogoPath;
 @property (nonatomic,copy) NSDictionary* copyright;
 
 @end
