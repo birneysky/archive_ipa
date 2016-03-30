@@ -19,7 +19,7 @@
 		<key>ProductsPath</key>
 		<string>../../../Api/BCAPI_IOS_DEMO/Products</string>
 		<key>CompositeLogoPath</key>
-		<string>./composite_logo.png</string>
+		<string>composite_logo.png</string>
 	</dict>
 	<key>Certificates</key>
 	<array>
