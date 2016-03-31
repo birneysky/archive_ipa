@@ -131,12 +131,14 @@
 - (void)configCopyRightText
 {
     [self setPlistFileValue:self.configInfo.copyright fromKey:@"Copyright" filePath:self.configInfo.appConfigureListPath];
+    [self setPlistFileValue:@(self.configInfo.visitorLoginEnable) fromKey:@"VisitorLoginEnable" filePath:self.configInfo.appConfigureListPath];
 }
 
 - (void)configPushkey
 {
     [self setPlistFileValue:self.configInfo.pushAppKey fromKey:@"APP_KEY" filePath:self.configInfo.appPushConfigListPath];
 }
+
 
 - (BOOL)configure
 {

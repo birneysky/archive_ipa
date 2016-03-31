@@ -91,7 +91,7 @@
 			<key>BundleDisplayName</key>
 			<string>迅吧</string>
 			<key>ServerAddress</key>
-			<string>101.200.186.105</string>
+			<string>master.commbar.cn</string>
 			<key>VisitorLoginEnable</key>
 			<true/>
 			<key>Copyright</key>
@@ -118,7 +118,7 @@
 			<key>BundleDisplayName</key>
 			<string>迅吧</string>
 			<key>ServerAddress</key>
-			<string>101.200.186.105</string>
+			<string>master.commbar.cn</string>
 			<key>VisitorLoginEnable</key>
 			<true/>
 			<key>Copyright</key>
@@ -145,7 +145,7 @@
 			<key>BundleDisplayName</key>
 			<string>融讯企业云</string>
 			<key>ServerAddress</key>
-			<string>101.200.186.105</string>
+			<string>master.51vcloud.com</string>
 			<key>VisitorLoginEnable</key>
 			<true/>
 			<key>Copyright</key>
@@ -174,7 +174,7 @@
 			<key>ServerAddress</key>
 			<string>192.168.0.222</string>
 			<key>VisitorLoginEnable</key>
-			<true/>
+			<false/>
 			<key>Copyright</key>
 			<dict>
 				<key>en-JP</key>
@@ -201,7 +201,7 @@
 			<key>ServerAddress</key>
 			<string>192.168.0.222</string>
 			<key>VisitorLoginEnable</key>
-			<true/>
+			<false/>
 			<key>Copyright</key>
 			<dict>
 				<key>en-JP</key>
