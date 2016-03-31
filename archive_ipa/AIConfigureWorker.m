@@ -66,19 +66,20 @@
      2 个  58  80 120
      */
     NSImage* image = [[NSImage alloc] initByReferencingFile:self.configInfo.appIconSrcPath];
-    NSLog(@"produceAppIcon %p,src %@",image,self.configInfo.appIconSrcPath);
+    //NSLog(@"produceAppIcon %p,src %@",image,self.configInfo.appIconSrcPath);
     CGFloat appIconWidth = image.size.width;
     CGFloat appIconHeight = image.size.height;
     
     NSString* resizeCommandFormat = @"convert -resize %fx%f %@ %@";
     NSString* resizeCommand = [NSString stringWithFormat:resizeCommandFormat,appIconWidth,appIconHeight,self
                                .configInfo.compositeLogoPath,self.configInfo.compositeLogoPath];
-    [self.executor executeCommand:resizeCommand];
+    //[self.executor executeCommand:resizeCommand];
+    NSLog(@"produceAppIcon %@",resizeCommand);
     
     NSString* temPicture = @"temp.png";
     NSString* compositeCommandFormat = @"composite %@ %@ %@";
     NSString* compositeCommand = [NSString stringWithFormat:compositeCommandFormat,self.configInfo.appIconSrcPath,self.configInfo.compositeLogoPath,temPicture];
-    [self.executor executeCommand:compositeCommand];
+    //[self.executor executeCommand:compositeCommand];
     NSLog(@"produceAppIcon %@",compositeCommand);
 //    NSString* commandFormat = @"convert -resize %dx%d %@ %@/%dx%d.png";
 //    NSString* commandFormat1 = @"convert -resize %dx%d %@ %@/%dx%d-1.png";
@@ -139,11 +140,11 @@
 
 - (BOOL)configure
 {
-    [self configBundleID];
-    [self setBundleDisplayName];
-    [self configServerAddress];
-    [self configCopyRightText];
-    [self configPushkey];
+//    [self configBundleID];
+//    [self setBundleDisplayName];
+//    [self configServerAddress];
+//    [self configCopyRightText];
+//    [self configPushkey];
     [self produceAppIcon];
     return YES;
 }
