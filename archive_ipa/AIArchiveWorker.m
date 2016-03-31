@@ -57,8 +57,8 @@
 
 - (BOOL)archive
 {
-//    [self compileProject];
-//    [self exportIpaFile];
+    [self compileProject];
+    [self exportIpaFile];
     return YES;
 }
 

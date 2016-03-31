@@ -73,43 +73,43 @@
     NSString* resizeCommandFormat = @"convert -resize %fx%f %@ %@";
     NSString* resizeCommand = [NSString stringWithFormat:resizeCommandFormat,appIconWidth,appIconHeight,self
                                .configInfo.compositeLogoPath,self.configInfo.compositeLogoPath];
-    //[self.executor executeCommand:resizeCommand];
-    NSLog(@"produceAppIcon %@",resizeCommand);
+    [self.executor executeCommand:resizeCommand];
+    //NSLog(@"produceAppIcon %@",resizeCommand);
     
     NSString* temPicture = @"temp.png";
     NSString* compositeCommandFormat = @"composite %@ %@ %@";
     NSString* compositeCommand = [NSString stringWithFormat:compositeCommandFormat,self.configInfo.appIconSrcPath,self.configInfo.compositeLogoPath,temPicture];
-    //[self.executor executeCommand:compositeCommand];
-    NSLog(@"produceAppIcon %@",compositeCommand);
-//    NSString* commandFormat = @"convert -resize %dx%d %@ %@/%dx%d.png";
-//    NSString* commandFormat1 = @"convert -resize %dx%d %@ %@/%dx%d-1.png";
-//    int iconSize[10] = {29,40,58,76,80,87,120,152,167,180};
-//    for ( int i = 0; i < 10; i++) {
-//        NSString* command = [NSString stringWithFormat:commandFormat,
-//                             iconSize[i],
-//                             iconSize[i],
-//                             temPicture,
-//                             self.configInfo.appIconDstPath,
-//                             iconSize[i],
-//                             iconSize[i]];
-//        NSString* command1 = [NSString stringWithFormat:commandFormat1,
-//                             iconSize[i],
-//                             iconSize[i],
-//                             temPicture,
-//                             self.configInfo.appIconDstPath,
-//                             iconSize[i],
-//                             iconSize[i]];
-//        if (58 == iconSize[i] ||
-//            80 == iconSize[i] ||
-//            120 == iconSize[i]) {
-//            NSLog(@"produceAppIcon %@",command1);
-//            [self.executor executeCommand:command1];
-//        }
-//        
-//        NSLog(@"produceAppIcon %@",command);
-//        [self.executor executeCommand:command];
-//    }
-    //[self.executor executeCommand:[NSString stringWithFormat:@"rm %@",temPicture]];
+    [self.executor executeCommand:compositeCommand];
+    //NSLog(@"produceAppIcon %@",compositeCommand);
+    NSString* commandFormat = @"convert -resize %dx%d %@ %@/%dx%d.png";
+    NSString* commandFormat1 = @"convert -resize %dx%d %@ %@/%dx%d-1.png";
+    int iconSize[10] = {29,40,58,76,80,87,120,152,167,180};
+    for ( int i = 0; i < 10; i++) {
+        NSString* command = [NSString stringWithFormat:commandFormat,
+                             iconSize[i],
+                             iconSize[i],
+                             temPicture,
+                             self.configInfo.appIconDstPath,
+                             iconSize[i],
+                             iconSize[i]];
+        NSString* command1 = [NSString stringWithFormat:commandFormat1,
+                             iconSize[i],
+                             iconSize[i],
+                             temPicture,
+                             self.configInfo.appIconDstPath,
+                             iconSize[i],
+                             iconSize[i]];
+        if (58 == iconSize[i] ||
+            80 == iconSize[i] ||
+            120 == iconSize[i]) {
+            //NSLog(@"produceAppIcon %@",command1);
+            [self.executor executeCommand:command1];
+        }
+        
+        //NSLog(@"produceAppIcon %@",command);
+        [self.executor executeCommand:command];
+    }
+    [self.executor executeCommand:[NSString stringWithFormat:@"rm %@",temPicture]];
 }
 
 - (void)produceLaunchImage
@@ -140,11 +140,11 @@
 
 - (BOOL)configure
 {
-//    [self configBundleID];
-//    [self setBundleDisplayName];
-//    [self configServerAddress];
-//    [self configCopyRightText];
-//    [self configPushkey];
+    [self configBundleID];
+    [self setBundleDisplayName];
+    [self configServerAddress];
+    [self configCopyRightText];
+    [self configPushkey];
     [self produceAppIcon];
     return YES;
 }

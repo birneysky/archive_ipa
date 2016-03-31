@@ -65,12 +65,12 @@ int main(int argc, const char * argv[]) {
             configInfo.compositeLogoPath = [pathes objectForKey:@"CompositeLogoPath"];
             configInfo.productsPath = [pathes objectForKey:@"ProductsPath"];
             
-            if ([option isEqualToString:@"-config"] && [bundleID isEqualToString:bundleID]) {
+            if ([option isEqualToString:@"-config"] && [bundleID isEqualToString:arguments]) {
                 AIConfigureWorker* configWorker = [[AIConfigureWorker alloc] initWithAppConfigInfo:configInfo];
                 [configWorker configure];
                 break;
             }
-            else if (([option isEqualToString:@"-ipa"] && [bundleID isEqualToString:bundleID])|| 1 == argc)
+            else if (([option isEqualToString:@"-ipa"] && [bundleID isEqualToString:arguments])|| 1 == argc)
             {
                 AIConfigureWorker* configWorker = [[AIConfigureWorker alloc] initWithAppConfigInfo:configInfo];
                 [configWorker configure];
