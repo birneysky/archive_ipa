@@ -58,6 +58,20 @@
     //[self setPlistFileValue:self.configInfo.bundleIdentifier fromKey:@"CFBundleIdentifier" filePath:self.configInfo.appInfoListPath];
 }
 
+- (void)configTranslateAppName
+{
+    NSDictionary* appNames = self.configInfo.appName;
+    NSString* commandFromat = @"perl -p -i -e \"s/CFBundleDisplayName = *.*/CFBundleDisplayName = \\\"%@\\\";/g\" %@";
+    [appNames enumerateKeysAndObjectsUsingBlock:^(id  _Nonnull key, id  _Nonnull obj, BOOL * _Nonnull stop) {
+        NSString* path = [NSString stringWithFormat:self.configInfo.appTranslatePath,key];
+        NSString* command = [NSString stringWithFormat:commandFromat,obj,path];
+        //NSLog(@"configTranslateAppName command %@",command);
+        [self.executor executeCommand:command];
+    }];
+    
+    
+}
+
 - (void)produceAppIcon
 {
     /*
@@ -74,7 +88,10 @@
     NSString* resizeCommand = [NSString stringWithFormat:resizeCommandFormat,appIconWidth,appIconHeight,self
                                .configInfo.compositeLogoPath,self.configInfo.compositeLogoPath];
     [self.executor executeCommand:resizeCommand];
-    //NSLog(@"produceAppIcon %@",resizeCommand);
+    
+    NSString* resizeLoginLogoCommand = [NSString stringWithFormat:resizeCommandFormat,180.0f,180.0f,self.configInfo.appIconSrcPath,self.configInfo.appLoginLogoPath];
+    [self.executor executeCommand:resizeLoginLogoCommand];
+    //NSLog(@"produceAppIcon %@",resizeLoginLogoCommand);
     
     NSString* temPicture = @"temp.png";
     NSString* compositeCommandFormat = @"composite %@ %@ %@";
@@ -131,6 +148,7 @@
 - (void)configCopyRightText
 {
     [self setPlistFileValue:self.configInfo.copyright fromKey:@"Copyright" filePath:self.configInfo.appConfigureListPath];
+    [self setPlistFileValue:self.configInfo.appName fromKey:@"AppName" filePath:self.configInfo.appConfigureListPath];
     [self setPlistFileValue:@(self.configInfo.visitorLoginEnable) fromKey:@"VisitorLoginEnable" filePath:self.configInfo.appConfigureListPath];
 }
 
@@ -147,6 +165,7 @@
     [self configServerAddress];
     [self configCopyRightText];
     [self configPushkey];
+    [self configTranslateAppName];
     [self produceAppIcon];
     return YES;
 }

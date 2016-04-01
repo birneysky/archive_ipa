@@ -4,6 +4,10 @@
 <dict>
 	<key>Paths</key>
 	<dict>
+		<key>AppTranslatePath</key>
+		<string>../../../Api/BCAPI_IOS_DEMO/V2BC_STANDARD/V2_Conference/%@.lproj/InfoPlist.strings</string>
+		<key>AppLoginLogoPath</key>
+		<string>../../../Api/BCAPI_IOS_DEMO/V2BC_STANDARD/Resource/Commbar.xcassets/LoginLogo.imageset/LoginLogo.png</string>
 		<key>AppPushConfigListPath</key>
 		<string>../../../Api/BCAPI_IOS_DEMO/V2BC_STANDARD/V2_Conference/PushConfig.plist</string>
 		<key>AppIconDstPath</key>
@@ -94,17 +98,32 @@
 			<string>master.commbar.cn</string>
 			<key>VisitorLoginEnable</key>
 			<true/>
+			<key>AppName</key>
+			<dict>
+				<key>Base</key>
+				<string>讯吧</string>
+				<key>en</key>
+				<string>Commbar</string>
+				<key>ja</key>
+				<string>Commbar</string>
+				<key>ko</key>
+				<string>Commbar</string>
+				<key>zh-Hans</key>
+				<string>讯吧</string>
+				<key>zh-Hant</key>
+				<string>訊吧</string>
+			</dict>
 			<key>Copyright</key>
 			<dict>
-				<key>en-JP</key>
+				<key>en</key>
 				<string>Copyright (C) Beijing WR Technology Co.,Ltd., All Rights Reserved.</string>
-				<key>ja-JP</key>
+				<key>ja</key>
 				<string>Copyright (C) Beijing WR Technology Co.,Ltd., All Rights Reserved.</string>
-				<key>ko-JP</key>
+				<key>ko</key>
 				<string>Copyright (C) Beijing WR Technology Co.,Ltd., All Rights Reserved.</string>
-				<key>zh-Hans-JP</key>
+				<key>zh-Hans</key>
 				<string>版权所有 (C) 北京威速融讯科技有限公司 保留所有权利</string>
-				<key>zh-Hant-JP</key>
+				<key>zh-Hant</key>
 				<string>版權所有 (C) 北京威速融訊科技有限公司 保留所有權利</string>
 			</dict>
 		</dict>
@@ -121,6 +140,21 @@
 			<string>master.commbar.cn</string>
 			<key>VisitorLoginEnable</key>
 			<true/>
+			<key>AppName</key>
+			<dict>
+				<key>Base</key>
+				<string>讯吧</string>
+				<key>en</key>
+				<string>Commbar</string>
+				<key>ja</key>
+				<string>Commbar</string>
+				<key>ko</key>
+				<string>Commbar</string>
+				<key>zh-Hans</key>
+				<string>讯吧</string>
+				<key>zh-Hant</key>
+				<string>訊吧</string>
+			</dict>
 			<key>Copyright</key>
 			<dict>
 				<key>en-JP</key>
@@ -148,17 +182,32 @@
 			<string>master.51vcloud.com</string>
 			<key>VisitorLoginEnable</key>
 			<true/>
+			<key>AppName</key>
+			<dict>
+				<key>Base</key>
+				<string>融讯企业云</string>
+				<key>en</key>
+				<string>51vcloud</string>
+				<key>ja</key>
+				<string>51vcloud</string>
+				<key>ko</key>
+				<string>51vcloud</string>
+				<key>zh-Hans</key>
+				<string>融讯企业云</string>
+				<key>zh-Hant</key>
+				<string>融訊企業雲</string>
+			</dict>
 			<key>Copyright</key>
 			<dict>
-				<key>en-JP</key>
+				<key>en</key>
 				<string>Copyright (C) Beijing WR Technology Co.,Ltd., All Rights Reserved.</string>
-				<key>ja-JP</key>
+				<key>ja</key>
 				<string>Copyright (C) Beijing WR Technology Co.,Ltd., All Rights Reserved.</string>
-				<key>ko-JP</key>
+				<key>ko</key>
 				<string>Copyright (C) Beijing WR Technology Co.,Ltd., All Rights Reserved.</string>
-				<key>zh-Hans-JP</key>
+				<key>zh-Hans</key>
 				<string>版权所有 (C) 北京威速融讯科技有限公司 保留所有权利</string>
-				<key>zh-Hant-JP</key>
+				<key>zh-Hant</key>
 				<string>版權所有 (C) 北京威速融訊科技有限公司 保留所有權利</string>
 			</dict>
 		</dict>
@@ -175,17 +224,32 @@
 			<string>192.168.0.222</string>
 			<key>VisitorLoginEnable</key>
 			<false/>
+			<key>AppName</key>
+			<dict>
+				<key>Base</key>
+				<string>BizCom</string>
+				<key>en</key>
+				<string>BizCom</string>
+				<key>ja</key>
+				<string>BizCom</string>
+				<key>ko</key>
+				<string>BizCom</string>
+				<key>zh-Hans</key>
+				<string>BizCom</string>
+				<key>zh-Hant</key>
+				<string>BizCom</string>
+			</dict>
 			<key>Copyright</key>
 			<dict>
-				<key>en-JP</key>
+				<key>en</key>
 				<string>Copyright (C) V2 Technology, Inc. All Rights Reserved.</string>
-				<key>ja-JP</key>
+				<key>ja</key>
 				<string>Copyright (C) V2 Technology, Inc. All Rights Reserved.</string>
-				<key>ko-JP</key>
+				<key>ko</key>
 				<string>Copyright (C) V2 Technology, Inc. All Rights Reserved.</string>
-				<key>zh-Hans-JP</key>
+				<key>zh-Hans</key>
 				<string>版权所有 (C) 北京威速科技有限公司 保留所有权利</string>
-				<key>zh-Hant-JP</key>
+				<key>zh-Hant</key>
 				<string>版權所有 (C) 北京威速科技有限公司 保留所有權利</string>
 			</dict>
 		</dict>
@@ -202,17 +266,32 @@
 			<string>192.168.0.222</string>
 			<key>VisitorLoginEnable</key>
 			<false/>
+			<key>AppName</key>
+			<dict>
+				<key>Base</key>
+				<string>讯吧</string>
+				<key>en</key>
+				<string>IM</string>
+				<key>ja</key>
+				<string>IM</string>
+				<key>ko</key>
+				<string>IM</string>
+				<key>zh-Hans</key>
+				<string>IM</string>
+				<key>zh-Hant</key>
+				<string>IM</string>
+			</dict>
 			<key>Copyright</key>
 			<dict>
-				<key>en-JP</key>
+				<key>en</key>
 				<string>Copyright (C) All Rights Reserved.</string>
-				<key>ja-JP</key>
+				<key>ja</key>
 				<string>Copyright (C) All Rights Reserved.</string>
-				<key>ko-JP</key>
+				<key>ko</key>
 				<string>Copyright (C) All Rights Reserved.</string>
-				<key>zh-Hans-JP</key>
+				<key>zh-Hans</key>
 				<string>版权所有 (C) 保留所有权利</string>
-				<key>zh-Hant-JP</key>
+				<key>zh-Hant</key>
 				<string>版權所有 (C) 保留所有權利</string>
 			</dict>
 		</dict>

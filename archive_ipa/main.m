@@ -54,6 +54,7 @@ int main(int argc, const char * argv[]) {
             configInfo.bundleDisplayName = [appItem objectForKey:@"BundleDisplayName"];
             configInfo.serverAddress = [appItem objectForKey:@"ServerAddress"];
             configInfo.copyright = [appItem objectForKey:@"Copyright"];
+            configInfo.appName = [appItem objectForKey:@"AppName"];
             configInfo.visitorLoginEnable = [[appItem objectForKey:@"VisitorLoginEnable"] boolValue];
             configInfo.appIconSrcPath = [appItem objectForKey:@"AppIconSrcPath"];
             configInfo.appProjectPath = [pathes objectForKey:@"AppProjectPath"];
@@ -62,7 +63,9 @@ int main(int argc, const char * argv[]) {
             configInfo.appConfigureListPath = [pathes objectForKey:@"AppConfigureListPath"];
             configInfo.appLaunchImagePath = [pathes objectForKey:@"AppLaunchImagePath"];
             configInfo.appInfoListPath = [pathes objectForKey:@"AppInfoListPath"];
+            configInfo.appLoginLogoPath = [pathes objectForKey:@"AppLoginLogoPath"];
             configInfo.compositeLogoPath = [pathes objectForKey:@"CompositeLogoPath"];
+            configInfo.appTranslatePath = [pathes objectForKey:@"AppTranslatePath"];
             configInfo.productsPath = [pathes objectForKey:@"ProductsPath"];
             
             if ([option isEqualToString:@"-config"] && [bundleID isEqualToString:arguments]) {
