@@ -4,6 +4,8 @@
 <dict>
 	<key>Paths</key>
 	<dict>
+		<key>AppGuidePageDstPath</key>
+		<string>../../../Api/BCAPI_IOS_DEMO/V2BC_STANDARD/Resource/Images.xcassets/Guide-Page</string>
 		<key>AppTranslatePath</key>
 		<string>../../../Api/BCAPI_IOS_DEMO/V2BC_STANDARD/V2_Conference/%@.lproj/InfoPlist.strings</string>
 		<key>AppLoginLogoPath</key>
@@ -98,6 +100,10 @@
 			<string>master.commbar.cn</string>
 			<key>VisitorLoginEnable</key>
 			<true/>
+			<key>GuidePageEnable</key>
+			<false/>
+			<key>Version</key>
+			<string>4.1.15</string>
 			<key>AppName</key>
 			<dict>
 				<key>Base</key>
@@ -140,6 +146,12 @@
 			<string>master.commbar.cn</string>
 			<key>VisitorLoginEnable</key>
 			<true/>
+			<key>GuidePageEnable</key>
+			<false/>
+			<key>UpdateURL</key>
+			<string>https://itunes.apple.com/cn/app/CommBar/id1098536685?mt=8</string>
+			<key>Version</key>
+			<string>4.1.15</string>
 			<key>AppName</key>
 			<dict>
 				<key>Base</key>
@@ -176,12 +188,20 @@
 			<integer>2</integer>
 			<key>AppIconSrcPath</key>
 			<string>../Params/51vcloud/Logo.png</string>
+			<key>AppGuidePageSrcPath</key>
+			<string>../Params/51vcloud/Guide/iOS</string>
 			<key>BundleDisplayName</key>
 			<string>融讯企业云</string>
 			<key>ServerAddress</key>
 			<string>master.51vcloud.com</string>
+			<key>GuidePageEnable</key>
+			<true/>
 			<key>VisitorLoginEnable</key>
 			<true/>
+			<key>UpdateURL</key>
+			<string>https://itunes.apple.com/cn/app/51vcloud/id1098541375?mt=8</string>
+			<key>Version</key>
+			<string>4.1.15</string>
 			<key>AppName</key>
 			<dict>
 				<key>Base</key>
@@ -224,6 +244,10 @@
 			<string>192.168.0.222</string>
 			<key>VisitorLoginEnable</key>
 			<false/>
+			<key>GuidePageEnable</key>
+			<false/>
+			<key>Version</key>
+			<string>4.1.15</string>
 			<key>AppName</key>
 			<dict>
 				<key>Base</key>
@@ -266,6 +290,10 @@
 			<string>192.168.0.222</string>
 			<key>VisitorLoginEnable</key>
 			<false/>
+			<key>GuidePageEnable</key>
+			<false/>
+			<key>Version</key>
+			<string>4.1.15</string>
 			<key>AppName</key>
 			<dict>
 				<key>Base</key>

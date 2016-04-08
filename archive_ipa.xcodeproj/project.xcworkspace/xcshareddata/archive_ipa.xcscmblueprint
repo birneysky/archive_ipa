@@ -1,0 +1,32 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "4DDAA43EECCBE317C24D1D31FBCDB28A5E6511E0",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+    "e2b7fc5e-49c5-46f9-be2f-69704adb4590++505" : {
+
+    }
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "e2b7fc5e-49c5-46f9-be2f-69704adb4590++505" : 0,
+    "4DDAA43EECCBE317C24D1D31FBCDB28A5E6511E0" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "C35F437C-5E26-4635-99BC-8145D6D3F8A8",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "e2b7fc5e-49c5-46f9-be2f-69704adb4590++505" : "..\/source_trunk\/trunk",
+    "4DDAA43EECCBE317C24D1D31FBCDB28A5E6511E0" : "archive_ipa\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "archive_ipa",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "archive_ipa.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/birneysky\/archive_ipa.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "4DDAA43EECCBE317C24D1D31FBCDB28A5E6511E0"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "http:\/\/192.168.0.129\/svn\/v2platform",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "e2b7fc5e-49c5-46f9-be2f-69704adb4590++505"
+    }
+  ]
+}
