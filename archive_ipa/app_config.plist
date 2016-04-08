@@ -60,7 +60,7 @@
 			<key>PushAppKey</key>
 			<string>99473b4b9e087aef24fdcc9f</string>
 			<key>ProvisioningProfile</key>
-			<string>03fa3171-cb55-4b98-86af-399854f58767</string>
+			<string>be4b666d-ca45-4788-b06a-cbf4d0436487</string>
 			<key>BundleID</key>
 			<string>com.v2tech.51vcloud</string>
 		</dict>
@@ -169,15 +169,15 @@
 			</dict>
 			<key>Copyright</key>
 			<dict>
-				<key>en-JP</key>
+				<key>en</key>
 				<string>Copyright (C) Beijing WR Technology Co.,Ltd., All Rights Reserved.</string>
-				<key>ja-JP</key>
+				<key>ja</key>
 				<string>Copyright (C) Beijing WR Technology Co.,Ltd., All Rights Reserved.</string>
-				<key>ko-JP</key>
+				<key>ko</key>
 				<string>Copyright (C) Beijing WR Technology Co.,Ltd., All Rights Reserved.</string>
-				<key>zh-Hans-JP</key>
+				<key>zh-Hans</key>
 				<string>版权所有 (C) 北京威速融讯科技有限公司 保留所有权利</string>
-				<key>zh-Hant-JP</key>
+				<key>zh-Hant</key>
 				<string>版權所有 (C) 北京威速融訊科技有限公司 保留所有權利</string>
 			</dict>
 		</dict>
